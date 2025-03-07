@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+
+            background-color: #0073cf;
+            background-image: linear-gradient(315deg, #0073cf 0%, #f2f0ef 74%);
+        }
+
+        header {
+            margin: 70px 5px 0px 5px;
+            border-radius: 15px;
+            background: rgb(0, 127, 255);
+            background: linear-gradient(159deg, rgba(0, 127, 255, 1) 0%, rgba(42, 82, 190, 1) 100%);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        header img {
+            width: 10%;
+            border-radius: 50%;
+        }
+
+        nav a {
+            padding: 12px 20px;
+            border-radius: 5px;
+            margin: 0 10px;
+            color: white;
+            font-size: 16px;
+
+        }
+
+        nav a:hover {
+            background-color: #523aea;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #0952b3;
+            color: white;
+            margin-top: 10px;
+            padding: 10px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .nav-button {
+            display: block;
+            background: none;
+            border: none;
+            color: white;
+            text-align: left;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .nav-button:hover {
+            background: #444;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+
+            height: 50px;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: #810138;
+            background: rgb(0, 127, 255);
+            background: linear-gradient(159deg, rgba(0, 127, 255, 1) 0%, rgba(42, 82, 190, 1) 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../ASSETS/bank logo.png" alt="Logo" width="700px">
+        <nav>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/bank%20project.html" target="_blank">HOME</a>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/aboutus.html" target="_self">ABOUT</a>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/contact%20us.html" target="_self">CONTACT</a>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/services.html" target="_self">SERVICES</a>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/on%20banking.html" target="_self">ONLINE BANKING</a>
+            <a href="http://127.0.0.1:5500/BANK%20PROJECT/dashboard.html" target="_blank">DASHBOARD</a>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <h2>Social Media Dashboard</h2>
+        <button class="nav-button" onclick="showSection('overview   15000+ people connected')">Overview</button>
+        <button class="nav-button" onclick="showSection('posts 500+ viewrs on post')">Posts</button>
+        <button class="nav-button" onclick="showSection('analytics describe 100+ content')">Analytics</button>
+    </div>
+    <div class="main-content" id="content">
+        <h1>Overview</h1>
+        <div class="card">
+            <h3>Total Followers</h3>
+            <p id="followers">Loading...</p>
+        </div>
+        <div class="card">
+            <h3>Recent Posts</h3>
+            <ul id="posts">
+                <li>Loading...</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showSection(section) {
+            document.getElementById("content").innerHTML = `<h1>${section.charAt(0).toUpperCase() + section.slice(1)}</h1>`;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("followers").innerText = "5,230";
+            document.getElementById("posts").innerHTML = "<li>Post 1: Hello World!</li><li>Post 2: New Update Available</li>";
+        });
+    </script>
+    <footer>
+        <p>&copy; 2025 LIFETIME bank. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+nav .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav .nav-link {
+    color: #ddd;
+}
+
+nav .nav-link:hover {
+    color: #fff;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+section {
+    padding: 40px 0;
+}
+
+footer {
+    margin-top: 40px;
+}

@@ -1,0 +1,11 @@
+.displayTasks{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+.taskColumn{
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid black;
+}

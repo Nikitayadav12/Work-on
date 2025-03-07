@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.animated-bg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 70%);
+    animation: backgroundMove 10s infinite linear;
+}
+
+@keyframes backgroundMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+
+h2 {
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.chatbot {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    width: 250px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.chat-header {
+    background: #00aaff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.chat-body {
+    height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Fixed Registration Box */
+.registration-box {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.registration-box h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.registration-box .form-control {
+    margin-bottom: 10px;
+}
+
+.registration-box .btn-primary {
+    background: #ffcc00;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.registration-box .btn-primary:hover {
+    background: #ffaa00;
+}
+/* Make sure the carousel fits well */
+.carousel {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Ensure images are fully visible */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Customize the carousel control buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Indicator dots styling */
+.carousel-indicators button {
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
