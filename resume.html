@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+
+    <section class="resume">
+        
+        <div class="profile">
+            <img src="./Asset/my photo.jpg" alt="Profile Picture">
+            <h2>Nikita Yadav</h2>
+            <p>Web Developer | Python Developer</p>
+        </div>
+
+        <div class="content">
+
+            <h3 onclick="toggleSection('contact')">CONTACT</h3>
+            <div id="contact" class="hidden">
+                <P>Phone: <a href="9322884106">9322884106</a></P>
+                <P>Email: <a href="https://mail.google.com/mail/u/0/#inbox">ynikita987@gmail.com</a></P>
+                <P>GitHub: <a href="https://github.com/Nikitayadav12">https://github.com/Nikitayadav12</a></P>
+                <P>LinkedIn: <a
+                        href="https://www.linkedin.com/in/nikita-yadav">https://www.linkedin.com/in/nikita-yadav</a>
+                </P>
+            </div>
+
+            <h3 onclick="toggleSection('education')">EDUCATION</h3>
+            <div id="education" class="hidden">
+                <section>
+                    <p> College Name: PVP College, Pravaranagar.</p>
+                    <ul>
+                        <li>Master's Of Science(Mathematics)</li>
+                        <ul>
+                            <li>2024 </li>
+                            <li>Pursuing</li>
+                        </ul>
+                        <li>Bachelor's Of Science (Mathematics)</li>
+                        <ul>
+                            <li>2021-2024 </li>
+                            <li>CGPA:9.15</li>
+                        </ul>
+                        <li>HSC(Science)</li>
+                        <ul>
+                            <li>2020-2021</li>
+                            <li>CGPA:9.25</li>
+                        </ul>
+                    </ul>
+                </section>
+            </div>
+
+            <h3 onclick="toggleSection('experience')">EXPERIENCE</h3>
+            <div id="experience" class="hidden">
+                <P>Fresher</P>
+            </div>
+
+            <h3 onclick="toggleSection('skills')">SKILLS</h3>
+            <div id="skills" class="hidden">
+                <section>
+                    <ul>
+                        <li> Python</li>
+                        <li> SQL </li>
+                        <li> LaTeX </li>
+                        <li> Data Science </li>
+                        <li> Web Development </li>
+                    </ul>
+                </section>
+            </div>
+
+            <h3 onclick="toggleSection('projects')">ACADEMIC PROJECT</h3>
+            <div id="projects" class="hidden">
+                <section>
+
+                    <ol>
+                        <li>Python:
+                            <ul>
+                                <li>Zomato Application Data Analysis</li>
+
+                                <details> Zomato has an extensive dataset comprising <strong> reviews,
+                                        restaurant profiles, and order patterns. </strong>The goal of this project is
+                                    to <strong>extract meaningful insights</strong> from this data to improve business
+                                    strategies.
+                                    The project follows three major phases:
+                                    <p><b>1. Data Collection and Preparation:</b>
+                                        Extracting data from Zomato’s API/database.
+                                        Cleaning and standardizing data for analysis.</p>
+                                    <p><b>2.Exploratory Data Analysis (EDA): </b>
+                                        Identifying trends, correlations, and patterns through descriptive
+                                        statistics and visualizations. Also, Validating relationships between
+                                        variables.</p>
+                                    <p><b>3.Strategic Recommendations:</b>
+                                        Enhancing restaurant operations, customer experience, delivery
+                                        logistics, and payment systems and Using data-driven insights for
+                                        marketing and growth.</p>
+                                </details>
+                            </ul>
+                        </li>
+                        <li>SQL :
+                            <ul>
+                                <li>Case 1: Car Owner and Automobile Data Management</li>
+                                <details>
+                                    The project explores <b>database schema development, data insertion,
+                                        and executing queries </b>to extract meaningful insights.
+                                    <ul>
+                                        <li>
+                                            <p>Develops a relational database to store <strong> owners' details and
+                                                    automobile attributes</strong> (e.g., model, color).</p>
+                                        </li>
+                                        <li>
+                                            <p>Defines a <strong>one-to-many relationship </strong>between owners and
+                                                their
+                                                vehicles.</p>
+                                        </li>
+                                    </ul>
+                                </details>
+                                <li>Case 2: Wholesaler And Product Data Management</li>
+                                <details>
+                                    <p> Focuses on <strong> storing and retrieving wholesaler and product
+                                            details</strong>
+                                        through an optimized relational database.</p>
+                                </details>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+            </div>
+
+            <h3 onclick="toggleSection('achievements')">ACADEMIC ACHIEVEMENT</h3>
+            <div id="achievements" class="hidden">
+                <section>
+
+                    <ul>
+                        <li>
+                            <p> Indian Association of Physics Teacher : National Graduate
+                                Physics Examination-2023 Placed among center Top 10%.</p>
+                        </li>
+                        <li>
+                            <p>Successfully completed 30 days Course of Information
+                                Communication Technology(ICT).</p>
+                        </li>
+                        <li>
+                            <p>Course completed of English For Personal And Professional
+                                Development Under Indian Institute Of Information Technology
+                                KOTA.</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
